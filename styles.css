@@ -1,0 +1,100 @@
+:root {
+  --primary-bg: #fef8e1;
+  --secondary-bg: #fee0b2;
+  --bg: #fef8e1;
+  --text-color: #d05f0c;
+  --button-bg: #fe7043;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  padding: calc(1rem + 5vw);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  background-color: var(--primary-bg);
+}
+@media (min-width: 768px) {
+  body {
+    padding: calc(4rem + 8vw);
+  }
+}
+.container {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.75rem 2rem 2.75rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+header {
+  margin: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+header h1 {
+  font-size: calc(1.75rem + 1vw);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+form div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+  border-radius: 0.25rem;
+}
+form button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--button-bg);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #cb5935;
+}
+#notification {
+  min-height: 3rem;
+  padding: 0.5rem;
+  color: #088808;
+  font-weight: bold;
+  text-align: center;
+}
+#notification.error {
+  color: #f00;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+table th,
+table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+table th {
+  background-color: var(--secondary-bg);
+}

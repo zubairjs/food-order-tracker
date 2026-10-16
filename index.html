@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Order Tracker</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Food Order Tracker</h1>
+      </header>
+      <main>
+        <form>
+          <div>
+            <input type="text" id="name" placeholder="Enter food name" />
+            <input type="number" id="quantity" placeholder="Quantity (1-10)" />
+          </div>
+          <button type="submit">Add order</button>
+        </form>
+        <p id="notification"></p>
+        <table id="foods">
+          <thead>
+            <tr>
+              <th>Food Item</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
